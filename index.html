@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <h1>Calculadora IMC v1.0</h1>
+    <h2>by Erick Silverio</h2>
+    <div class="container">
+        <div class="first-step">
+            <p>Clique no botão para o calcular o seu IMC</p>
+            <button onclick="go(1,2)">Iniciar</button>
+        </div>
+        <div class="second-step">
+            <h3>Vamos lá!</h3>
+            <hr>
+            <label for="peso">Digite o seu peso:</label>
+            <input id="peso" type="number" placeholder="Seu Peso" >
+            <br><br>
+            <label for="altura">Digite a sua altura:</label>
+            <input id="altura" type="number" placeholder="Sua Altura, Ex: 1.70" >
+            <br><br>
+            <button onclick="validate()">Calcular</button>
+        </div>
+        <div class="final-step">
+            <h3>Resultado:</h3>
+            <p class="resultado">...</p>
+            <button class= "botoes-finais" onclick="go(3,2)">Repetir</button><button class= "botoes-finais" onclick="go(3,1)">Finalizar</button>
+        </div>
+    </div>
+    
+</body>
+</html>
